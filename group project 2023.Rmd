@@ -7,23 +7,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-# Hello
+The project will consist of Justin and I coming together to use the SQL database to record the data obtained from the deer data collected from this years
+ capstoe. The data consist of qualitative and quantitative data such as deer ID numbers, harvest date, 
+ year, county, area name, age, sex among many other categories in which data was accounted for. Our goal as a whole is to be able to organize the obtained
+ data in a way that is approchable and facilitates anaylsis of data once it comes to that. The data that has been generated thus far is currently recorded
+ through an Excel sheet, and is in the process of being transfered to the SQL database as codes are generated and chosen fit for this project. 
+ 
