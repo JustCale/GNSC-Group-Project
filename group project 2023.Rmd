@@ -6,6 +6,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+#project will be done using SQL
 
 The project will consist of Justin and I coming together to use the SQL database to record the data obtained from the deer data collected from this years
  capstoe. The data consist of qualitative and quantitative data such as deer ID numbers, harvest date, 
