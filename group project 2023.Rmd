@@ -14,12 +14,13 @@ The project will consist of Justin and I coming together to use the SQL database
  data in a way that is approchable and facilitates anaylsis of data once it comes to that. The data that has been generated thus far is currently recorded
  through an Excel sheet, and is in the process of being transfered to the SQL database as codes are generated and chosen fit for this project. 
  
+ #This creates the Table and the add creates columns
  Create Table CapstoneCWD (
   ADD ODWC_ID int
   ADD Harvest_Date date
   ADD County Varchar (50)
   ADD Region Varchar (50)
-  
+  #This insetrts data into rows under the columns
   INSERT INTO CapstoneCWD
   VALUES (2318, "2023-02-13", "McIntosh", "NE", 6.5, "F", 110, "Good", "No),
          (2421, "2023-02-13", "McIntosh", "NE", 4.5, "F", 95.9, "Fair", "No"),
