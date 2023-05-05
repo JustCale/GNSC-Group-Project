@@ -32,7 +32,7 @@ The project will consist of Justin and I coming together to use the SQL database
          (2391, "2023-02-21", "Jackson", "SW" 1.5, "M", 71, "Good", "No"),
          (2437, "2023-02-15", "Adair", "NE", 0.5, "M", 68.5, "Fair", No"),
          (2432, "2023-02-15", "Adair", "NE", 1.5, "F", 88, "Excellent", "No"),
-         (2342, "2023-02-06", "Muskogee", "NE", 6.5, "F", 104, "Good", "No")
+         (2342, "2023-02-06", "Muskogee", "NE", 6.5, "F", 104, "Good", "No");
 ALTER TABLE CapstoneCWD;
  ADD Age decimal(5,1);
  ALTER TABLE CapstoneCWD;
