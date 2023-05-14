@@ -14,6 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
  data in a way that is approchable and facilitates anaylsis of data once it comes to that. The data that has been generated thus far is currently recorded
  through an Excel sheet, and is in the process of being transfered to the SQL database as codes are generated and chosen fit for this project. 
  
+
  #This creates the Table and the add creates columns
  Create Table CapstoneCWD (
   ADD ODWC_ID int
@@ -34,6 +35,7 @@ knitr::opts_chunk$set(echo = TRUE)
          (2437, "2023-02-15", "Adair", "NE", 0.5, "M", 68.5, "Fair", No"),
          (2432, "2023-02-15", "Adair", "NE", 1.5, "F", 88, "Excellent", "No"),
          (2342, "2023-02-06", "Muskogee", "NE", 6.5, "F", 104, "Good", "No");
+
 ALTER TABLE CapstoneCWD;
  ADD Age decimal(5,1);
  ALTER TABLE CapstoneCWD;
@@ -58,4 +60,9 @@ VALUES (2372, "2023-02-06", "Muskogee", "NE", 3.5, "F", 99, "Good", "No"),
        (2304, "2023-02-21", "Nowata", "NE", 1.5, "F", 107.8, "Good", "No"),
        (2480, "2023-02-20", "Rogers", "NE", 1.5, "M", 100, "Good", "No"),
        (2468, "2023-02-20", "Rogers", "NE", 1.5, "F", 94, "Good", "No");
+
+       SELECT * FROM CapstoneCWD
+       
+
        SELECT * FROM CapstoneCWD;
+

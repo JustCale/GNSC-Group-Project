@@ -31,5 +31,9 @@ VALUES (2372, "2023-02-06", "Muskogee", "NE", 3.5, "F", 99, "Good", "No"),
        (2304, "2023-02-21", "Nowata", "NE", 1.5, "F", 107.8, "Good", "No"),
        (2480, "2023-02-20", "Rogers", "NE", 1.5, "M", 100, "Good", "No"),
        (2468, "2023-02-20", "Rogers", "NE", 1.5, "F", 94, "Good", "No");
+
+       SELECT * FROM CapstoneCWD
+
        SELECT * FROM CapstoneCWD;
+
        
