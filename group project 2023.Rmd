@@ -8,12 +8,34 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 #project will be done using SQL
 
-The project will consist of Justin and I coming together to use the SQL database to record the data obtained from the deer data collected from this years
+#The project will consist of Justin and I coming together to use the SQL database to record the data obtained from the deer data collected from this years
  capstoe. The data consist of qualitative and quantitative data such as deer ID numbers, harvest date, 
  year, county, area name, age, sex among many other categories in which data was accounted for. Our goal as a whole is to be able to organize the obtained
  data in a way that is approchable and facilitates anaylsis of data once it comes to that. The data that has been generated thus far is currently recorded
  through an Excel sheet, and is in the process of being transfered to the SQL database as codes are generated and chosen fit for this project. 
  
+
+ #This creates the Table and the add creates columns
+ Create Table CapstoneCWD (
+  ADD ODWC_ID int
+  ADD Harvest_Date date
+  ADD County Varchar (50)
+  ADD Region Varchar (50)
+  #This insetrts data into rows under the columns
+  INSERT INTO CapstoneCWD
+  VALUES (2318, "2023-02-13", "McIntosh", "NE", 6.5, "F", 110, "Good", "No),
+         (2421, "2023-02-13", "McIntosh", "NE", 4.5, "F", 95.9, "Fair", "No"),
+         (2346, "2023-02-06", "Stephens", "SW", 6.5, "F", 107, "Fair", "No"),
+         (2356, "2023-02-06", "Stephens", "SW", 6.5, "F", 126, "Good", "No"),
+         (2397, "2023-02-14", "Comanche", "SW", 1.5, "M", 101.7, "Good", "No"),
+         (2486, "2023-02-20", "Beckham", "SW", 1.5, "F", 107, "Excellent", "No"),
+         (2490, "2023-02-20", "Beckham", "SW", 3.5, "F", 120, "Excellent, "No"),
+         (2347, "2023-02-21", "Jackson", "SW", 4.5, "F" 117, "Good", "No"),
+         (2391, "2023-02-21", "Jackson", "SW" 1.5, "M", 71, "Good", "No"),
+         (2437, "2023-02-15", "Adair", "NE", 0.5, "M", 68.5, "Fair", No"),
+         (2432, "2023-02-15", "Adair", "NE", 1.5, "F", 88, "Excellent", "No"),
+         (2342, "2023-02-06", "Muskogee", "NE", 6.5, "F", 104, "Good", "No");
+
 ALTER TABLE CapstoneCWD;
  ADD Age decimal(5,1);
  ALTER TABLE CapstoneCWD;
@@ -38,5 +60,9 @@ VALUES (2372, "2023-02-06", "Muskogee", "NE", 3.5, "F", 99, "Good", "No"),
        (2304, "2023-02-21", "Nowata", "NE", 1.5, "F", 107.8, "Good", "No"),
        (2480, "2023-02-20", "Rogers", "NE", 1.5, "M", 100, "Good", "No"),
        (2468, "2023-02-20", "Rogers", "NE", 1.5, "F", 94, "Good", "No");
+
        SELECT * FROM CapstoneCWD
        
+
+       SELECT * FROM CapstoneCWD;
+
