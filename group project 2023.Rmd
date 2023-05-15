@@ -23,12 +23,38 @@ knitr::opts_chunk$set(echo = TRUE)
   ADD Harvest_Date date
   ADD County Varchar (50)
   ADD Region Varchar (50)
+
   ADD Age decimal(5,1)
   ADD Sex VARCHAR(50)
   ADD Weight decimal(5,1)
   ADD Physical_Condition VARCHAR(50)
   ADD CWD VARCHAR(50);
   #This insetrts data into rows under the columns
+
+  
+
+ALTER TABLE CapstoneCWD;
+ ADD Age decimal(5,1);
+ ALTER TABLE CapstoneCWD;
+ ADD Sex VARCHAR(50);
+ ALTER TABLE CapstoneCWD;
+ ADD Weight decimal(5,1);
+ ALTER TABLE CapstoneCWD;
+ ADD Physical_Condition VARCHAR(50);
+ ALTER TABLE CapstoneCWD;
+ ADD CWD VARCHAR(50);
+
+
+       
+       
+       
+        #This code inserts data into rows under the columns. The values imputed in the code must be in order with the 
+        columns. You will notice that whole integers nor decimals require quotation marks as opposed to the other data types such as 
+        data,and varchar(a series of characters). The data for each column is seperated by a coma, and each row is seperated by a set of
+        parenthesis, in order to distinguish data sets from each other. Each set of parenthesis corresponds to a new row. We can execute
+        this statement to insert multiple rows all at once. The semicolon seen at the end is the standard way to separate 
+        each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.
+
   INSERT INTO CapstoneCWD
   VALUES (2318, "2023-02-13", "McIntosh", "NE", 6.5, "F", 110, "Good", "No),
          (2421, "2023-02-13", "McIntosh", "NE", 4.5, "F", 95.9, "Fair", "No"),
@@ -42,17 +68,16 @@ knitr::opts_chunk$set(echo = TRUE)
          (2437, "2023-02-15", "Adair", "NE", 0.5, "M", 68.5, "Fair", No"),
          (2432, "2023-02-15", "Adair", "NE", 1.5, "F", 88, "Excellent", "No"),
          (2342, "2023-02-06", "Muskogee", "NE", 6.5, "F", 104, "Good", "No");
+         
+         
+         
+  SELECT * FROM CapstoneCWD
+       
 
-ALTER TABLE CapstoneCWD;
- ADD Age decimal(5,1);
- ALTER TABLE CapstoneCWD;
- ADD Sex VARCHAR(50);
- ALTER TABLE CapstoneCWD;
- ADD Weight decimal(5,1);
- ALTER TABLE CapstoneCWD;
- ADD Physical_Condition VARCHAR(50);
- ALTER TABLE CapstoneCWD;
- ADD CWD VARCHAR(50);
+  SELECT * FROM CapstoneCWD;
+       
+      #New rows were imputed in the same table CapstoneCWD at a different time, but the same procedure and code will apply 
+      to the addtional statement made for the same reasons.      
 
 INSERT INTO CapstoneCWD
 VALUES (2372, "2023-02-06", "Muskogee", "NE", 3.5, "F", 99, "Good", "No"),
@@ -68,8 +93,11 @@ VALUES (2372, "2023-02-06", "Muskogee", "NE", 3.5, "F", 99, "Good", "No"),
        (2480, "2023-02-20", "Rogers", "NE", 1.5, "M", 100, "Good", "No"),
        (2468, "2023-02-20", "Rogers", "NE", 1.5, "F", 94, "Good", "No");
 
-       SELECT * FROM CapstoneCWD
+   SELECT * FROM CapstoneCWD
        
 
-       SELECT * FROM CapstoneCWD;
+   SELECT * FROM CapstoneCWD;
+       
+       
+       
 
