@@ -6,3 +6,4 @@ This is an readme file for justin and I's project.
 Continues to check for connection. Checking. 
 test 700
 Test 705
+Checking again. 
