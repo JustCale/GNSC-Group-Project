@@ -43,10 +43,6 @@ ALTER TABLE CapstoneCWD;
  ADD Physical_Condition VARCHAR(50);
  ALTER TABLE CapstoneCWD;
  ADD CWD VARCHAR(50);
-
-
-       
-       
        
         #This code inserts data into rows under the columns. The values imputed in the code must be in order with the 
         columns. You will notice that whole integers nor decimals require quotation marks as opposed to the other data types such as 
