@@ -16,11 +16,18 @@ knitr::opts_chunk$set(echo = TRUE)
  
 
  #This creates the Table and the add creates columns
+ # The Varchar is the amount of character for the name of the column we did 50 so there is a confortarble amount of room incase the name is changed.
+ # The decimal was added to Age and Weight as the data collected had decimals within.
  Create Table CapstoneCWD (
   ADD ODWC_ID int
   ADD Harvest_Date date
   ADD County Varchar (50)
   ADD Region Varchar (50)
+  ADD Age decimal(5,1)
+  ADD Sex VARCHAR(50)
+  ADD Weight decimal(5,1)
+  ADD Physical_Condition VARCHAR(50)
+  ADD CWD VARCHAR(50);
   #This insetrts data into rows under the columns
   INSERT INTO CapstoneCWD
   VALUES (2318, "2023-02-13", "McIntosh", "NE", 6.5, "F", 110, "Good", "No),
