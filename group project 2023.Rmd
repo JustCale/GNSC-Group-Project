@@ -6,18 +6,19 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-#project will be done using SQL
+    #project will be done using SQL
 
-#The project will consist of Justin and I coming together to use the SQL database to record the data obtained from the deer data collected from this years
- capstoe. The data consist of qualitative and quantitative data such as deer ID numbers, harvest date, 
- year, county, area name, age, sex among many other categories in which data was accounted for. Our goal as a whole is to be able to organize the obtained
- data in a way that is approchable and facilitates anaylsis of data once it comes to that. The data that has been generated thus far is currently recorded
- through an Excel sheet, and is in the process of being transfered to the SQL database as codes are generated and chosen fit for this project. 
+    #The project will consist of Justin and I coming together to use the SQL database to record the data obtained from the deer data 
+    collected from this years capstoe. The data consist of qualitative and quantitative data such as deer ID numbers, harvest date, 
+    year, county, area name, age, sex among many other categories in which data was accounted for. Our goal as a whole is to be able to 
+    organize the obtained data in a way that is approchable and facilitates anaylsis of data once it comes to that. The data that has       been generated thus far is currently recorded through an Excel sheet, and is in the process of being transfered to the SQL database 
+    as codes are generated and chosen fit for this project. 
  
-
- #This creates the Table and the add creates columns
- # The Varchar is the amount of character for the name of the column we did 50 so there is a confortarble amount of room incase the name is changed.
- # The decimal was added to Age and Weight as the data collected had decimals within.
+    #This creates the Table and the add creates columns
+    #The Varchar is the amount of character for the name of the column we did 50 so there is a confortarble amount of room incase the 
+    name is changed.
+    #The decimal was added to Age and Weight as the data collected had decimals within.
+    
  Create Table CapstoneCWD (
   ADD ODWC_ID int
   ADD Harvest_Date date
@@ -29,9 +30,9 @@ knitr::opts_chunk$set(echo = TRUE)
   ADD Weight decimal(5,1)
   ADD Physical_Condition VARCHAR(50)
   ADD CWD VARCHAR(50);
-  #This insetrts data into rows under the columns
-
   
+    #This insetrts data into rows under the columns
+
 
 ALTER TABLE CapstoneCWD;
  ADD Age decimal(5,1);
@@ -65,6 +66,9 @@ ALTER TABLE CapstoneCWD;
          (2432, "2023-02-15", "Adair", "NE", 1.5, "F", 88, "Excellent", "No"),
          (2342, "2023-02-06", "Muskogee", "NE", 6.5, "F", 104, "Good", "No");
          
+    #the data within the columns was organized in a way to easily identify the deer in a speciic county within a specific date. The 
+    way in which the data was inputed allows us as scientist to facilitate access and interpretation. The rows and columns are 
+    mostly arranged from most to least importance for the purpose of this research. 
          
     #this code selects the table in which the data will be inputed in. 
  
